@@ -29,6 +29,7 @@ Image Generator is a Django application that leverages the Stability AI Text-to-
    cd image_generator
 
 2. **Run the below command in terminal**
+    ```
     python manage.py runserver
 
 
