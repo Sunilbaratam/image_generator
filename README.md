@@ -20,6 +20,9 @@ Image Generator is a Django application that leverages the Stability AI Text-to-
 - Redis (for Celery)
 - Requests library
 
+### API info
+    - API end point: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+    
 ### Setup
 
 1. **Clone the Repository**
@@ -28,7 +31,15 @@ Image Generator is a Django application that leverages the Stability AI Text-to-
    git clone https://github.com/Sunilbaratam/image_generator.git
    cd image_generator
 
-2. **Run the below command in terminal**
+2. **Start the redis server with below command**
+    ```
+    redis-server
+
+2. **Start the celery worker with below command**
+    ```
+    celery -A image_generator worker --loglevel=info
+
+3. **Run the below command in terminal to start server**
     ```
     python manage.py runserver
 
