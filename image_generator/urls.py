@@ -26,7 +26,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('generate-images/', views.generate_images_view, name='generate_images'),
     path('images/', views.images_view, name='images'),
-    path('all-images/',views.all_images_view, name='images')
+    # path('all-images/',views.all_images_view, name='all_images')
 ]
 
 if settings.DEBUG:

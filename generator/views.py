@@ -25,9 +25,9 @@ def images_view(request):
     images = GeneratedImage.objects.order_by('-created_at')[:3]
     return render(request, 'generator/images.html', {'images': images})
 
-def all_images_view(request):
+# def all_images_view(request):
     
-    images = GeneratedImage.objects.all()
-    # images = GeneratedImage.objects.order_by('-created_at')[:3]
-    return render(request, 'generator/images.html', {'images': images})
+#     all_images = GeneratedImage.objects.all()
+#     # images = GeneratedImage.objects.order_by('-created_at')[:3]
+#     return render(request, 'generator/images.html', {'all_images': all_images})
 
